@@ -1,0 +1,40 @@
+Redux pattern:
+    reducers -> store -> actions and repeat de sequence 
+
+    Store: where the data is stored
+
+        -Provider: contain all application to use Store
+        that help to use store in all components
+    -------------------------------
+    Slide: function that accepts an initial state an object reducers functions and
+        a "slice name"
+
+        -initialState: is the initial state is like the default stats
+            before begin.
+
+        -Reducer: functions that contain the logic and calculation that 
+        needed to be performed on the state. These functions accept
+        the initial state of the state being used and the action type. 
+        It updates the state and responds with the new state.
+
+        -actions: functions that allow to call since interface
+        all state updates
+    --------------------------
+    useDispatch: functions that i want to call for to be able
+        to update the state functions
+
+    useSelector: fetch the data stored in de state
+
+
+Redux toolkit Query: 
+    endpoint: function that return an object that allow me create
+        http petition
+
+    builder.mutation: mean create a data, send data to the backEnd
+        body: mean what data i send to the server
+
+    provideTags: help to reload the data when i add a new data
+        in real time without reload the page
+    
+    transformeResponse: when the backend send me the data
+        return the data but processed

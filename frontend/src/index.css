@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLORS */
+  --COLOR: #FFF;
+  --ERROR: firebrick;
+  --LINK-COLOR: #000;
+  --LINK-HOVER: rgba(131, 127, 127, 0.9);
+  --INPUT-INVALID: #F00;
+}
+
+/* || UTILITY CLASSES */
+.errmsg {
+  display: inline-block;
+  background-color: var(--TABLE-BGCOLOR);
+  color: var(--ERROR);
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.errmsg a:any-link {
+  color: var(--ERROR);
+  text-decoration: underline;
+}
+
+.width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* || GENERAL STYLES */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  background-color: #e7e7e7;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  /* React root div */
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:any-link {
+  color: var(--LINK-COLOR);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--LINK-HOVER);
+}
+
+/* NAVBAR */
+
+.navBar-container {
+  width: 100%;
+  background-color: #fff;
+  height: 95px;
+  position: relative;
+  bottom: 16px;
+  padding-top: 5px;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-top: 15px;
+}
+.navBar a {
+  color: #000;
+}
+.navBar__img-container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  position: relative;
+}
+
+.navBar__img-container img {
+  width: 100%;
+  position: relative;
+  bottom: 5px;
+}
+.dashboardLink {
+  position: absolute;
+  bottom: 0px;
+}
+.navBar__actions {
+  display: flex;
+  position: relative;
+  bottom: 7px;
+}
+.nav-link {
+  width: 80px;
+}
+.navBar__nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 20px;
+}
+.navBar__search {
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 5px 10px;
+}
+
+.navBar__nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 12px;
+}
+.fa-solid {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #fff;
+  padding: 20px 0 60px 0;
+  position: relative;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer__content-container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+}
+.footer__medias {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  right: 95px;
+}
+.footer__medias h3 {
+  text-align: center;
+}
+.footer__medias-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-brands {
+  font-size: 40px;
+  margin: 0 10px;
+}
+.footer-terms ul {
+  list-style: none;
+
+}.footer-terms ul li a {
+  color: blue;
+  cursor: pointer;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* SLIDER */
+
+.slider {
+  display: flex;
+  overflow-x: hidden;
+  max-width: 1500px;
+  width: 100%;
+  max-height: 400px;
+  position: relative;
+  bottom: 15px;
+}
+.slider-container {
+  width: 1200%;
+  object-fit: cover;
+  display: flex;
+}.slider__img {
+  width: 100%;
+}
+
+/* LOGIN */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form__submit-button {
+  margin-top: 15px;
+  cursor: pointer;
+}
+.form__footer {
+  margin-top: 20px;
+}
+.form__back-btn {
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 0 15px;
+}
+.form__input--incomplete {
+  border: 1px solid var(--INPUT-INVALID);
+  outline: 1px solid var(--INPUT-INVALID);
+}
+
+/* USER LIST */
+
+
